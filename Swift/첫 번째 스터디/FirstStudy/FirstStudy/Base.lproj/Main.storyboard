@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ffv-ja-12D">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--첫 번째 탭바의 뷰 컨트롤러-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="FirstStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NO1-O2-Jxl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="oAV-bb-54m"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="EJc-mC-hmG"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NO1-O2-Jxl" secondAttribute="bottom" id="aIu-XP-hVx"/>
+                            <constraint firstAttribute="trailing" secondItem="NO1-O2-Jxl" secondAttribute="trailing" id="j4C-6r-G9a"/>
+                            <constraint firstItem="NO1-O2-Jxl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qFm-8U-lAK"/>
+                            <constraint firstItem="NO1-O2-Jxl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="x5N-HS-2ok"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="첫 번째 탭바의 뷰 컨트롤러" id="L0w-AK-d9Y"/>
+                    <connections>
+                        <outlet property="tableView" destination="NO1-O2-Jxl" id="DYr-4r-nT4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2018.4000000000001" y="137.18140929535232"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="3Pf-s3-y8P">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ffv-ja-12D" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="IfE-kh-cWd">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="SSB-ER-IDh" kind="relationship" relationship="viewControllers" id="XkS-Ry-8QU"/>
+                        <segue destination="GX5-4k-B54" kind="relationship" relationship="viewControllers" id="vkP-m8-tHX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sJD-Le-QcC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="137.18140929535232"/>
+        </scene>
+        <!--첫 번째-->
+        <scene sceneID="yIS-Wu-2yd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SSB-ER-IDh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="첫 번째" id="fep-NR-dmj"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Rum-8D-wbd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6eP-Yr-8Q6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mij-QE-jIl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079.2" y="137.18140929535232"/>
+        </scene>
+        <!--두 번째-->
+        <scene sceneID="d22-R3-EKa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GX5-4k-B54" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="두 번째" id="RIv-58-kQ0"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PcM-EY-Nuf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Axm-uF-6Sq" kind="relationship" relationship="rootViewController" id="egl-H3-or3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ImP-8D-6Oh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079" y="890"/>
+        </scene>
+        <!--두 번째 탭바의 뷰 컨트롤러-->
+        <scene sceneID="cPY-b3-3I1">
+            <objects>
+                <viewController id="Axm-uF-6Sq" customClass="SecondViewController" customModule="FirstStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DiG-X5-s6d"/>
+                        <viewControllerLayoutGuide type="bottom" id="2EK-JD-7Ms"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Fa-ia-OAE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WL1-do-mbo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Axm-uF-6Sq" id="qNu-bk-XHi"/>
+                                    <outlet property="delegate" destination="Axm-uF-6Sq" id="zMi-Nc-cNL"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WL1-do-mbo" firstAttribute="leading" secondItem="6Fa-ia-OAE" secondAttribute="leading" id="Mpa-of-g4f"/>
+                            <constraint firstAttribute="bottom" secondItem="WL1-do-mbo" secondAttribute="bottom" id="dFa-YH-f9K"/>
+                            <constraint firstAttribute="trailing" secondItem="WL1-do-mbo" secondAttribute="trailing" id="elf-dm-W0u"/>
+                            <constraint firstItem="WL1-do-mbo" firstAttribute="top" secondItem="6Fa-ia-OAE" secondAttribute="top" id="v4m-LS-XdF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="두 번째 탭바의 뷰 컨트롤러" id="eTM-4Q-xLq"/>
+                    <connections>
+                        <outlet property="tableView" destination="WL1-do-mbo" id="nUY-7F-Pru"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cov-7R-6Mx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2016.8" y="888.30584707646187"/>
+        </scene>
+    </scenes>
+</document>
