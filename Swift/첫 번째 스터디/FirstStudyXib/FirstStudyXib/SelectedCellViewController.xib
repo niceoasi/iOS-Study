@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectedCellViewController" customModule="FirstStudyXib" customModuleProvider="target">
+            <connections>
+                <outlet property="closeButton" destination="2ep-Lt-whq" id="gZa-NN-XFn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ep-Lt-whq">
+                    <rect key="frame" x="87.5" y="233" width="200" height="200"/>
+                    <color key="backgroundColor" red="0.54503643509999999" green="0.54513353109999996" blue="0.54503029579999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="MsX-Iv-JQR"/>
+                        <constraint firstAttribute="height" constant="200" id="jhH-lo-7qg"/>
+                    </constraints>
+                    <state key="normal" title="Number">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="dismissViewController" destination="-1" eventType="touchUpInside" id="rcc-bp-D6z"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fc9-U1-Qqn">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                    <color key="backgroundColor" red="0.67171746489999995" green="0.43725818399999999" blue="0.13726106290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="bqI-iC-cMJ"/>
+                        <constraint firstAttribute="width" constant="150" id="ycG-ya-nt3"/>
+                    </constraints>
+                    <state key="normal" title="Search Label">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="searchLabel" destination="-1" eventType="touchUpInside" id="Vag-lt-wsT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.21685543660000001" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fc9-U1-Qqn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Nov-3P-Z0w"/>
+                <constraint firstItem="2ep-Lt-whq" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="egu-ad-mvo"/>
+                <constraint firstItem="2ep-Lt-whq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pUX-Gf-eML"/>
+                <constraint firstItem="fc9-U1-Qqn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yx1-0d-hnK"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
