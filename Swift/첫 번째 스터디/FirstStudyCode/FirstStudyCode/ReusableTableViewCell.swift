@@ -22,6 +22,7 @@ class ReusableTableViewCell: UITableViewCell {
         return label
     }()
     
+    
     // MARK: Life Cycle
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -39,6 +40,7 @@ class ReusableTableViewCell: UITableViewCell {
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-16-[v0]|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0": nameLabel]))
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[v0]|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0": nameLabel]))
     }
+    
     
     // MARK: Actions
 }

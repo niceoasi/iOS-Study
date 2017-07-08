@@ -75,6 +75,7 @@ class SelectionCellViewController: UIViewController {
         NSLayoutConstraint.activate([horizontalConstraintForSearchLabelButton, verticalConstraintForSearchLabelButton, widthConstraintForSearchLabelButton, heightConstraintForSearchLabelButton])
     }
     
+    
     // MARK: Actions
     func searchLabel() {
         flag = false
@@ -85,6 +86,10 @@ class SelectionCellViewController: UIViewController {
     }
     
     func dismissViewController() {
-        dismiss(animated: true, completion: nil)
+        if let navigationController = navigationController {
+            navigationController.popViewController(animated: true)
+        } else {
+            dismiss(animated: true, completion: nil)
+        }
     }
 }

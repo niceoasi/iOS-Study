@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA0C4DB11F10AC5A002CEB2C /* UIColor+HexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C4DB01F10AC5A002CEB2C /* UIColor+HexString.swift */; };
 		AA5A07341F0A44A100660671 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A07331F0A44A100660671 /* AppDelegate.swift */; };
 		AA5A07361F0A44A100660671 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A07351F0A44A100660671 /* FirstViewController.swift */; };
 		AA5A073C1F0A44A100660671 /* FirstStudyCode.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA5A073A1F0A44A100660671 /* FirstStudyCode.xcdatamodeld */; };
@@ -17,6 +18,7 @@
 		AA5A076A1F0A471300660671 /* SelectionCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A07691F0A471300660671 /* SelectionCellViewController.swift */; };
 		AA5A076C1F0A472100660671 /* SearchLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A076B1F0A472100660671 /* SearchLabelViewController.swift */; };
 		AA5A076E1F0A5BF200660671 /* ReusableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A076D1F0A5BF200660671 /* ReusableTableViewCell.swift */; };
+		AA5A07AE1F0A831000660671 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5A07AC1F0A831000660671 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA0C4DB01F10AC5A002CEB2C /* UIColor+HexString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+HexString.swift"; sourceTree = "<group>"; };
 		AA5A07301F0A44A100660671 /* FirstStudyCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstStudyCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5A07331F0A44A100660671 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA5A07351F0A44A100660671 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +56,7 @@
 		AA5A07691F0A471300660671 /* SelectionCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionCellViewController.swift; sourceTree = "<group>"; };
 		AA5A076B1F0A472100660671 /* SearchLabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchLabelViewController.swift; sourceTree = "<group>"; };
 		AA5A076D1F0A5BF200660671 /* ReusableTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableTableViewCell.swift; sourceTree = "<group>"; };
+		AA5A07AD1F0A831000660671 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA0C4DAF1F10AC05002CEB2C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AA0C4DB01F10AC5A002CEB2C /* UIColor+HexString.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
 		AA5A07271F0A44A100660671 = {
 			isa = PBXGroup;
 			children = (
@@ -104,9 +116,11 @@
 			isa = PBXGroup;
 			children = (
 				AA5A07661F0A45A600660671 /* Supporting Files */,
+				AA0C4DAF1F10AC05002CEB2C /* Extension */,
 				AA5A07651F0A459D00660671 /* Controller */,
 				AA5A07641F0A459700660671 /* View */,
 				AA5A07331F0A44A100660671 /* AppDelegate.swift */,
+				AA5A07AC1F0A831000660671 /* LaunchScreen.storyboard */,
 				AA5A073D1F0A44A100660671 /* Assets.xcassets */,
 			);
 			path = FirstStudyCode;
@@ -269,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA5A073E1F0A44A100660671 /* Assets.xcassets in Resources */,
+				AA5A07AE1F0A831000660671 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +314,7 @@
 				AA5A07361F0A44A100660671 /* FirstViewController.swift in Sources */,
 				AA5A07341F0A44A100660671 /* AppDelegate.swift in Sources */,
 				AA5A076E1F0A5BF200660671 /* ReusableTableViewCell.swift in Sources */,
+				AA0C4DB11F10AC5A002CEB2C /* UIColor+HexString.swift in Sources */,
 				AA5A076C1F0A472100660671 /* SearchLabelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +349,17 @@
 			targetProxy = AA5A07531F0A44A100660671 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA5A07AC1F0A831000660671 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA5A07AD1F0A831000660671 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AA5A07591F0A44A100660671 /* Debug */ = {
@@ -533,6 +560,7 @@
 				AA5A075D1F0A44A100660671 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA5A075E1F0A44A100660671 /* Build configuration list for PBXNativeTarget "FirstStudyCodeTests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +569,7 @@
 				AA5A07601F0A44A100660671 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA5A07611F0A44A100660671 /* Build configuration list for PBXNativeTarget "FirstStudyCodeUITests" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +578,7 @@
 				AA5A07631F0A44A100660671 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
