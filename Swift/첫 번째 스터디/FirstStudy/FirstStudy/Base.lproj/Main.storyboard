@@ -41,11 +41,20 @@
                     <navigationItem key="navigationItem" title="첫 번째 탭바의 뷰 컨트롤러" id="L0w-AK-d9Y"/>
                     <connections>
                         <outlet property="tableView" destination="NO1-O2-Jxl" id="DYr-4r-nT4"/>
+                        <segue destination="Sgv-y9-0oH" kind="show" identifier="ShowDetailCellSegue" id="WHc-G9-uu4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2018.4000000000001" y="137.18140929535232"/>
+        </scene>
+        <!--SearchLabelViewController-->
+        <scene sceneID="4kl-lQ-25a">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SearchLabel" storyboardName="SearchLabel" referencedIdentifier="SearchLabelViewController" id="Sgv-y9-0oH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1hA-xp-0UM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2910" y="137"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="3Pf-s3-y8P">
@@ -53,6 +62,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ffv-ja-12D" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="IfE-kh-cWd">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -135,6 +145,7 @@
                     <navigationItem key="navigationItem" title="두 번째 탭바의 뷰 컨트롤러" id="eTM-4Q-xLq"/>
                     <connections>
                         <outlet property="tableView" destination="WL1-do-mbo" id="nUY-7F-Pru"/>
+                        <segue destination="Sgv-y9-0oH" kind="presentation" identifier="PresentDetailCellSegue" id="gVX-aB-KPc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cov-7R-6Mx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -142,4 +153,7 @@
             <point key="canvasLocation" x="2016.8" y="888.30584707646187"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="gVX-aB-KPc"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -37,6 +37,17 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     
+    // MARK: Segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let index = sender as? Int, let controller = segue.destination as? SearchLabelViewController else {
+            print("Error: Segue")
+            return
+        }
+        
+        controller.index = index
+    }
+    
+    
     // MARK: TableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 100
@@ -52,19 +63,21 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let searchStroyBoard = UIStoryboard(name: "SearchLabel", bundle: nil)
-        
-        guard let viewController = searchStroyBoard.instantiateViewController(withIdentifier: "SearchLabelViewController") as? SearchLabelViewController else {
-            print("error")
-            return
-        }
+//        let searchStroyBoard = UIStoryboard(name: "SearchLabel", bundle: nil)
+//        
+//        guard let viewController = searchStroyBoard.instantiateViewController(withIdentifier: "SearchLabelViewController") as? SearchLabelViewController else {
+//            print("error")
+//            return
+//        }
+//        
+//        viewController.index = indexPath.row
+//        navigationController?.pushViewController(viewController, animated: true)
         
         let backItem = UIBarButtonItem()
         backItem.title = "Back"
         navigationItem.backBarButtonItem = backItem
         
-        viewController.index = indexPath.row
-        navigationController?.pushViewController(viewController, animated: true)
+        performSegue(withIdentifier: "ShowDetailCellSegue", sender: indexPath.row)
     }
     
     

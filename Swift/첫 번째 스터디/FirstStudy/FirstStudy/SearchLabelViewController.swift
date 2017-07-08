@@ -15,6 +15,7 @@ class SearchLabelViewController: UIViewController {
     var index: Int?
     var flag = true
     
+    
     // MARK: Outlets
     @IBOutlet weak var closeButton: UIButton?
     
@@ -26,7 +27,6 @@ class SearchLabelViewController: UIViewController {
         // Do any additional setup after loading the view.
         if let num = index {
             closeButton?.setTitle("\(num)", for: .normal)
-            
         }
     }
     
@@ -49,6 +49,10 @@ class SearchLabelViewController: UIViewController {
     }
     
     @IBAction func closeViewController(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        if let navigationController = navigationController {
+            navigationController.popViewController(animated: true)
+        } else {
+            dismiss(animated: true, completion: nil)
+        }
     }
 }

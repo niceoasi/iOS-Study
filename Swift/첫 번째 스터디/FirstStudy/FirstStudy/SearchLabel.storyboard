@@ -29,7 +29,9 @@
                                     <constraint firstAttribute="height" constant="150" id="HiM-xo-4CY"/>
                                     <constraint firstAttribute="width" constant="150" id="eM2-b4-FuU"/>
                                 </constraints>
-                                <state key="normal" title="SearchButton"/>
+                                <state key="normal" title="SearchButton">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="searchLabel:" destination="lCl-0l-5lp" eventType="touchUpInside" id="rA3-Ko-QMa"/>
                                     <segue destination="KNB-uU-d4B" kind="presentation" id="vek-2a-Y5X"/>
