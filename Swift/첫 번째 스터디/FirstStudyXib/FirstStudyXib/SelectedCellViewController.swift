@@ -16,6 +16,7 @@ class SelectedCellViewController: UIViewController {
     var flag = true
     var index: Int = 0
     
+    
     // MARK: Outlets
     @IBOutlet weak var closeButton: UIButton?
     
@@ -50,6 +51,10 @@ class SelectedCellViewController: UIViewController {
     }
     
     @IBAction func dismissViewController() {
-        dismiss(animated: true, completion: nil)
+        if let navigationController = navigationController {
+            navigationController.popViewController(animated: true)
+        } else {
+            dismiss(animated: true, completion: nil)
+        }
     }
 }
