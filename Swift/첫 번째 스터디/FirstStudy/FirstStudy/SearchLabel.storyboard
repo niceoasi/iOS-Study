@@ -139,7 +139,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="닫기"/>
                                 <connections>
-                                    <action selector="closeViewController:" destination="KNB-uU-d4B" eventType="touchUpInside" id="GGe-mC-ukH"/>
+                                    <action selector="closeViewController:" destination="KNB-uU-d4B" eventType="touchUpInside" id="BEf-cP-but"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -9,12 +9,11 @@
 /* Begin PBXBuildFile section */
 		AA0C4DB11F10AC5A002CEB2C /* UIColor+HexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C4DB01F10AC5A002CEB2C /* UIColor+HexString.swift */; };
 		AA5A07341F0A44A100660671 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A07331F0A44A100660671 /* AppDelegate.swift */; };
-		AA5A07361F0A44A100660671 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A07351F0A44A100660671 /* FirstViewController.swift */; };
+		AA5A07361F0A44A100660671 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A07351F0A44A100660671 /* CustomViewController.swift */; };
 		AA5A073C1F0A44A100660671 /* FirstStudyCode.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA5A073A1F0A44A100660671 /* FirstStudyCode.xcdatamodeld */; };
 		AA5A073E1F0A44A100660671 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5A073D1F0A44A100660671 /* Assets.xcassets */; };
 		AA5A074C1F0A44A100660671 /* FirstStudyCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A074B1F0A44A100660671 /* FirstStudyCodeTests.swift */; };
 		AA5A07571F0A44A100660671 /* FirstStudyCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A07561F0A44A100660671 /* FirstStudyCodeUITests.swift */; };
-		AA5A07681F0A46DD00660671 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A07671F0A46DD00660671 /* SecondViewController.swift */; };
 		AA5A076A1F0A471300660671 /* SelectionCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A07691F0A471300660671 /* SelectionCellViewController.swift */; };
 		AA5A076C1F0A472100660671 /* SearchLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A076B1F0A472100660671 /* SearchLabelViewController.swift */; };
 		AA5A076E1F0A5BF200660671 /* ReusableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A076D1F0A5BF200660671 /* ReusableTableViewCell.swift */; };
@@ -42,7 +41,7 @@
 		AA0C4DB01F10AC5A002CEB2C /* UIColor+HexString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+HexString.swift"; sourceTree = "<group>"; };
 		AA5A07301F0A44A100660671 /* FirstStudyCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstStudyCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5A07331F0A44A100660671 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA5A07351F0A44A100660671 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		AA5A07351F0A44A100660671 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		AA5A073B1F0A44A100660671 /* FirstStudyCode.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FirstStudyCode.xcdatamodel; sourceTree = "<group>"; };
 		AA5A073D1F0A44A100660671 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA5A07421F0A44A100660671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,7 +51,6 @@
 		AA5A07521F0A44A100660671 /* FirstStudyCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstStudyCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5A07561F0A44A100660671 /* FirstStudyCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStudyCodeUITests.swift; sourceTree = "<group>"; };
 		AA5A07581F0A44A100660671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA5A07671F0A46DD00660671 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		AA5A07691F0A471300660671 /* SelectionCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionCellViewController.swift; sourceTree = "<group>"; };
 		AA5A076B1F0A472100660671 /* SearchLabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchLabelViewController.swift; sourceTree = "<group>"; };
 		AA5A076D1F0A5BF200660671 /* ReusableTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableTableViewCell.swift; sourceTree = "<group>"; };
@@ -155,8 +153,7 @@
 		AA5A07651F0A459D00660671 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				AA5A07351F0A44A100660671 /* FirstViewController.swift */,
-				AA5A07671F0A46DD00660671 /* SecondViewController.swift */,
+				AA5A07351F0A44A100660671 /* CustomViewController.swift */,
 				AA5A07691F0A471300660671 /* SelectionCellViewController.swift */,
 				AA5A076B1F0A472100660671 /* SearchLabelViewController.swift */,
 			);
@@ -308,10 +305,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA5A07681F0A46DD00660671 /* SecondViewController.swift in Sources */,
 				AA5A073C1F0A44A100660671 /* FirstStudyCode.xcdatamodeld in Sources */,
 				AA5A076A1F0A471300660671 /* SelectionCellViewController.swift in Sources */,
-				AA5A07361F0A44A100660671 /* FirstViewController.swift in Sources */,
+				AA5A07361F0A44A100660671 /* CustomViewController.swift in Sources */,
 				AA5A07341F0A44A100660671 /* AppDelegate.swift in Sources */,
 				AA5A076E1F0A5BF200660671 /* ReusableTableViewCell.swift in Sources */,
 				AA0C4DB11F10AC5A002CEB2C /* UIColor+HexString.swift in Sources */,

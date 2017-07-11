@@ -12,10 +12,8 @@
 		AA5A07861F0A7FF500660671 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5A07851F0A7FF500660671 /* Assets.xcassets */; };
 		AA5A07941F0A7FF500660671 /* FirstStudyXibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A07931F0A7FF500660671 /* FirstStudyXibTests.swift */; };
 		AA5A079F1F0A7FF500660671 /* FirstStudyXibUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A079E1F0A7FF500660671 /* FirstStudyXibUITests.swift */; };
-		AA5A07B51F0A840E00660671 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A07B31F0A840E00660671 /* SecondViewController.swift */; };
-		AA5A07B61F0A840E00660671 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA5A07B41F0A840E00660671 /* SecondViewController.xib */; };
-		AA5A07B91F0A853F00660671 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A07B71F0A853F00660671 /* FirstViewController.swift */; };
-		AA5A07BA1F0A853F00660671 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA5A07B81F0A853F00660671 /* FirstViewController.xib */; };
+		AA5A07B91F0A853F00660671 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A07B71F0A853F00660671 /* CustomViewController.swift */; };
+		AA5A07BA1F0A853F00660671 /* CustomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA5A07B81F0A853F00660671 /* CustomViewController.xib */; };
 		AA5A07BD1F0A890E00660671 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5A07BB1F0A890E00660671 /* LaunchScreen.storyboard */; };
 		AA5A07C01F0A8AB400660671 /* ReusableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A07BE1F0A8AB400660671 /* ReusableTableViewCell.swift */; };
 		AA5A07C11F0A8AB400660671 /* ReusableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA5A07BF1F0A8AB400660671 /* ReusableTableViewCell.xib */; };
@@ -54,10 +52,8 @@
 		AA5A079A1F0A7FF500660671 /* FirstStudyXibUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstStudyXibUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5A079E1F0A7FF500660671 /* FirstStudyXibUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStudyXibUITests.swift; sourceTree = "<group>"; };
 		AA5A07A01F0A7FF500660671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA5A07B31F0A840E00660671 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		AA5A07B41F0A840E00660671 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
-		AA5A07B71F0A853F00660671 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		AA5A07B81F0A853F00660671 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		AA5A07B71F0A853F00660671 /* CustomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
+		AA5A07B81F0A853F00660671 /* CustomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomViewController.xib; sourceTree = "<group>"; };
 		AA5A07BC1F0A890E00660671 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA5A07BE1F0A8AB400660671 /* ReusableTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableTableViewCell.swift; sourceTree = "<group>"; };
 		AA5A07BF1F0A8AB400660671 /* ReusableTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReusableTableViewCell.xib; sourceTree = "<group>"; };
@@ -154,8 +150,7 @@
 		AA5A07B01F0A835C00660671 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				AA5A07B71F0A853F00660671 /* FirstViewController.swift */,
-				AA5A07B31F0A840E00660671 /* SecondViewController.swift */,
+				AA5A07B71F0A853F00660671 /* CustomViewController.swift */,
 				AA5A07C21F0A8CC600660671 /* SelectedCellViewController.swift */,
 				AA5A07C61F0A95BA00660671 /* SearchLabelViewController.swift */,
 			);
@@ -165,8 +160,7 @@
 		AA5A07B11F0A836A00660671 /* Xib */ = {
 			isa = PBXGroup;
 			children = (
-				AA5A07B81F0A853F00660671 /* FirstViewController.xib */,
-				AA5A07B41F0A840E00660671 /* SecondViewController.xib */,
+				AA5A07B81F0A853F00660671 /* CustomViewController.xib */,
 				AA5A07C31F0A8CC600660671 /* SelectedCellViewController.xib */,
 				AA5A07C71F0A95BA00660671 /* SearchLabelViewController.xib */,
 				AA5A07BE1F0A8AB400660671 /* ReusableTableViewCell.swift */,
@@ -294,9 +288,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA5A07B61F0A840E00660671 /* SecondViewController.xib in Resources */,
 				AA5A07BD1F0A890E00660671 /* LaunchScreen.storyboard in Resources */,
-				AA5A07BA1F0A853F00660671 /* FirstViewController.xib in Resources */,
+				AA5A07BA1F0A853F00660671 /* CustomViewController.xib in Resources */,
 				AA5A07C91F0A95BA00660671 /* SearchLabelViewController.xib in Resources */,
 				AA5A07C11F0A8AB400660671 /* ReusableTableViewCell.xib in Resources */,
 				AA5A07861F0A7FF500660671 /* Assets.xcassets in Resources */,
@@ -325,13 +318,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA5A07B51F0A840E00660671 /* SecondViewController.swift in Sources */,
 				AA5A07841F0A7FF500660671 /* FirstStudyXib.xcdatamodeld in Sources */,
 				AA5A077C1F0A7FF500660671 /* AppDelegate.swift in Sources */,
 				AA5A07C01F0A8AB400660671 /* ReusableTableViewCell.swift in Sources */,
 				AA5A07C81F0A95BA00660671 /* SearchLabelViewController.swift in Sources */,
 				AA5A07C41F0A8CC600660671 /* SelectedCellViewController.swift in Sources */,
-				AA5A07B91F0A853F00660671 /* FirstViewController.swift in Sources */,
+				AA5A07B91F0A853F00660671 /* CustomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +568,7 @@
 				AA5A07A51F0A7FF500660671 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA5A07A61F0A7FF500660671 /* Build configuration list for PBXNativeTarget "FirstStudyXibTests" */ = {
 			isa = XCConfigurationList;
@@ -584,6 +577,7 @@
 				AA5A07A81F0A7FF500660671 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA5A07A91F0A7FF500660671 /* Build configuration list for PBXNativeTarget "FirstStudyXibUITests" */ = {
 			isa = XCConfigurationList;
@@ -592,6 +586,7 @@
 				AA5A07AB1F0A7FF500660671 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

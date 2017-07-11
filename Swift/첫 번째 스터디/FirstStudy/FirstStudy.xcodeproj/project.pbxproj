@@ -8,14 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		AA5A06691F07552B00660671 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A06681F07552B00660671 /* AppDelegate.swift */; };
-		AA5A066B1F07552B00660671 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A066A1F07552B00660671 /* FirstViewController.swift */; };
+		AA5A066B1F07552B00660671 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A066A1F07552B00660671 /* CustomViewController.swift */; };
 		AA5A066E1F07552B00660671 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5A066C1F07552B00660671 /* Main.storyboard */; };
 		AA5A06711F07552B00660671 /* FirstStudy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA5A066F1F07552B00660671 /* FirstStudy.xcdatamodeld */; };
 		AA5A06731F07552B00660671 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5A06721F07552B00660671 /* Assets.xcassets */; };
 		AA5A06761F07552B00660671 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5A06741F07552B00660671 /* LaunchScreen.storyboard */; };
 		AA5A06811F07552B00660671 /* FirstStudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A06801F07552B00660671 /* FirstStudyTests.swift */; };
 		AA5A068C1F07552B00660671 /* FirstStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A068B1F07552B00660671 /* FirstStudyUITests.swift */; };
-		AA5A069A1F07564900660671 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A06991F07564900660671 /* SecondViewController.swift */; };
 		AA5A069D1F0756D400660671 /* ReusableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A069B1F0756D400660671 /* ReusableTableViewCell.swift */; };
 		AA5A069E1F0756D400660671 /* ReusableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA5A069C1F0756D400660671 /* ReusableTableViewCell.xib */; };
 		AA5A06A01F075A1500660671 /* SearchLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5A069F1F075A1500660671 /* SearchLabelViewController.swift */; };
@@ -43,7 +42,7 @@
 /* Begin PBXFileReference section */
 		AA5A06651F07552B00660671 /* FirstStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5A06681F07552B00660671 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA5A066A1F07552B00660671 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		AA5A066A1F07552B00660671 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		AA5A066D1F07552B00660671 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA5A06701F07552B00660671 /* FirstStudy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FirstStudy.xcdatamodel; sourceTree = "<group>"; };
 		AA5A06721F07552B00660671 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,7 +54,6 @@
 		AA5A06871F07552B00660671 /* FirstStudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstStudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5A068B1F07552B00660671 /* FirstStudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStudyUITests.swift; sourceTree = "<group>"; };
 		AA5A068D1F07552B00660671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA5A06991F07564900660671 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		AA5A069B1F0756D400660671 /* ReusableTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableTableViewCell.swift; sourceTree = "<group>"; };
 		AA5A069C1F0756D400660671 /* ReusableTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReusableTableViewCell.xib; sourceTree = "<group>"; };
 		AA5A069F1F075A1500660671 /* SearchLabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchLabelViewController.swift; sourceTree = "<group>"; };
@@ -149,8 +147,7 @@
 		AA5A071D1F09FC8C00660671 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				AA5A066A1F07552B00660671 /* FirstViewController.swift */,
-				AA5A06991F07564900660671 /* SecondViewController.swift */,
+				AA5A066A1F07552B00660671 /* CustomViewController.swift */,
 				AA5A069F1F075A1500660671 /* SearchLabelViewController.swift */,
 				AA5A07251F0A16E400660671 /* SearchedLabelViewController.swift */,
 			);
@@ -326,8 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA5A07261F0A16E400660671 /* SearchedLabelViewController.swift in Sources */,
-				AA5A069A1F07564900660671 /* SecondViewController.swift in Sources */,
-				AA5A066B1F07552B00660671 /* FirstViewController.swift in Sources */,
+				AA5A066B1F07552B00660671 /* CustomViewController.swift in Sources */,
 				AA5A06691F07552B00660671 /* AppDelegate.swift in Sources */,
 				AA5A069D1F0756D400660671 /* ReusableTableViewCell.swift in Sources */,
 				AA5A06711F07552B00660671 /* FirstStudy.xcdatamodeld in Sources */,

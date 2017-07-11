@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--첫 번째 탭바의 뷰 컨트롤러-->
+        <!--Custom View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="FirstStudy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CustomViewController" customModule="FirstStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -38,10 +38,11 @@
                             <constraint firstItem="NO1-O2-Jxl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="x5N-HS-2ok"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="첫 번째 탭바의 뷰 컨트롤러" id="L0w-AK-d9Y"/>
+                    <navigationItem key="navigationItem" id="L0w-AK-d9Y"/>
                     <connections>
                         <outlet property="tableView" destination="NO1-O2-Jxl" id="DYr-4r-nT4"/>
                         <segue destination="Sgv-y9-0oH" kind="show" identifier="ShowDetailCellSegue" id="WHc-G9-uu4"/>
+                        <segue destination="Sgv-y9-0oH" kind="presentation" identifier="PresentDetailCellSegue" id="kYL-I6-67N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -98,7 +99,7 @@
         <scene sceneID="d22-R3-EKa">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GX5-4k-B54" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="두 번째" id="RIv-58-kQ0"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="두 번째" id="RIv-58-kQ0"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PcM-EY-Nuf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -106,54 +107,16 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Axm-uF-6Sq" kind="relationship" relationship="rootViewController" id="egl-H3-or3"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vTc-Ya-6XP"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ImP-8D-6Oh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1079" y="890"/>
         </scene>
-        <!--두 번째 탭바의 뷰 컨트롤러-->
-        <scene sceneID="cPY-b3-3I1">
-            <objects>
-                <viewController id="Axm-uF-6Sq" customClass="SecondViewController" customModule="FirstStudy" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="DiG-X5-s6d"/>
-                        <viewControllerLayoutGuide type="bottom" id="2EK-JD-7Ms"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="6Fa-ia-OAE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WL1-do-mbo">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="Axm-uF-6Sq" id="qNu-bk-XHi"/>
-                                    <outlet property="delegate" destination="Axm-uF-6Sq" id="zMi-Nc-cNL"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="WL1-do-mbo" firstAttribute="leading" secondItem="6Fa-ia-OAE" secondAttribute="leading" id="Mpa-of-g4f"/>
-                            <constraint firstAttribute="bottom" secondItem="WL1-do-mbo" secondAttribute="bottom" id="dFa-YH-f9K"/>
-                            <constraint firstAttribute="trailing" secondItem="WL1-do-mbo" secondAttribute="trailing" id="elf-dm-W0u"/>
-                            <constraint firstItem="WL1-do-mbo" firstAttribute="top" secondItem="6Fa-ia-OAE" secondAttribute="top" id="v4m-LS-XdF"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="두 번째 탭바의 뷰 컨트롤러" id="eTM-4Q-xLq"/>
-                    <connections>
-                        <outlet property="tableView" destination="WL1-do-mbo" id="nUY-7F-Pru"/>
-                        <segue destination="Sgv-y9-0oH" kind="presentation" identifier="PresentDetailCellSegue" id="gVX-aB-KPc"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cov-7R-6Mx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2016.8" y="888.30584707646187"/>
-        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="gVX-aB-KPc"/>
+        <segue reference="vTc-Ya-6XP"/>
+        <segue reference="kYL-I6-67N"/>
     </inferredMetricsTieBreakers>
 </document>
