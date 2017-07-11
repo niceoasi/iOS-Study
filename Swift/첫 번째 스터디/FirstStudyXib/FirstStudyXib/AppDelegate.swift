@@ -14,15 +14,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    var firstViewController: FirstViewController?
-    var secondViewController: SecondViewController?
+    var firstViewController: CustomViewController?
+    var secondViewController: CustomViewController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        firstViewController = FirstViewController()
-        secondViewController = SecondViewController()
+        firstViewController = CustomViewController()
+        secondViewController = CustomViewController()
         
         guard let firstVC = firstViewController, let secondVC = secondViewController else {
             return false

@@ -13,8 +13,8 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var firstViewController: FirstViewController?
-    var secondViewController: SecondViewController?
+    var firstViewController: CustomViewController?
+    var secondViewController: CustomViewController?
     
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -23,8 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let tabbarController = UITabBarController()
         
-        firstViewController = FirstViewController()
-        secondViewController = SecondViewController()
+        firstViewController = CustomViewController()
+        secondViewController = CustomViewController()
         
         guard let firstViewController1 = firstViewController, let secondViewController1 = secondViewController else {
             return false
