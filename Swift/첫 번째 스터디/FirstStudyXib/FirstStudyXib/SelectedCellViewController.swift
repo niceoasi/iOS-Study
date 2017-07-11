@@ -14,7 +14,7 @@ class SelectedCellViewController: UIViewController {
 
     // MARK: Properties
     var flag = true
-    var index: Int = 0
+    var index: Int?
     
     
     // MARK: Outlets
@@ -25,7 +25,9 @@ class SelectedCellViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        closeButton?.setTitle("\(index)", for: .normal)
+        if let index = index {
+            closeButton?.setTitle("\(index)", for: .normal)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

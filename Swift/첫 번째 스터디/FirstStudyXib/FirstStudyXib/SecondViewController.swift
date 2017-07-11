@@ -56,7 +56,6 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedCellVC = SelectedCellViewController()
         selectedCellVC.index = indexPath.row
-//        selectedCellVC.closeButton?.setTitle("\(indexPath.row)", for: .normal)
         
         present(selectedCellVC, animated: true, completion: nil)
     }

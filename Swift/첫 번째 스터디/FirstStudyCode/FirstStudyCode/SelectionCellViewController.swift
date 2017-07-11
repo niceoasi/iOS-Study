@@ -42,7 +42,6 @@ class SelectionCellViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .blue
         setupViews()
     }
     
@@ -60,6 +59,8 @@ class SelectionCellViewController: UIViewController {
     }
     
     func setupViews() {
+        view.backgroundColor = .blue
+        
         // Add Close Button
         view.addSubview(closeButton)
         view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-50-[v0]-50-|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0": closeButton]))
