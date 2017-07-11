@@ -71,20 +71,13 @@ class SearchLabelViewController: UIViewController {
     // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
 
         setupViews()
         showView()
     }
     
     func setupViews() {
-        
-        //        let centerXConstraintsForTextLabel = textLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-        //        let centerYConstraintsForTextLabel = textLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-        //        let widthConstraintForTextLabel = NSLayoutConstraint(item: textLabel, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 100)
-        //        let heightConstraintForTextLabel = NSLayoutConstraint(item: textLabel, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 100)
-        //
-        //        NSLayoutConstraint.activate([centerXConstraintsForTextLabel, centerYConstraintsForTextLabel, widthConstraintForTextLabel, heightConstraintForTextLabel])
+        view.backgroundColor = .white
         
         // Add Views
         view.addSubview(viewOne)
@@ -110,6 +103,24 @@ class SearchLabelViewController: UIViewController {
         view.addSubview(closeButton)
         view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-20-[v0]", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0": closeButton]))
         view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[v0]-20-[v1]", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0": viewOne, "v1": closeButton]))
+ 
+        
+        /*
+        view.addSubview(textLabel)
+        let hConstraints = NSLayoutConstraint.constraints(withVisualFormat: "H:|-50-[v0]", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0": textLabel])
+        let vConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:|-90-[v0]", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0": textLabel])
+        NSLayoutConstraint.activate(hConstraints)
+        NSLayoutConstraint.activate(vConstraints)
+        
+        let centerXConstraintsForTextLabel = textLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        let centerYConstraintsForTextLabel = textLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        let widthConstraintForTextLabel = NSLayoutConstraint(item: textLabel, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 100)
+        let heightConstraintForTextLabel = NSLayoutConstraint(item: textLabel, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 100)
+        
+        NSLayoutConstraint.activate([centerXConstraintsForTextLabel, centerYConstraintsForTextLabel, widthConstraintForTextLabel, heightConstraintForTextLabel])
+        
+        view.addConstraints([centerXConstraintsForTextLabel, centerYConstraintsForTextLabel, widthConstraintForTextLabel, heightConstraintForTextLabel])
+        */
     }
     
     internal func showView() {
@@ -118,12 +129,13 @@ class SearchLabelViewController: UIViewController {
             self.textLabel.text = "찾았다!"
         }
         
-        
-//        UIView.animate(withDuration: 10000.0, animations: {
-//            self.textLabel.text = "찾는 중.."
-//        }, completion: { (flag) in
-//            self.textLabel.text = "찾았다!"
-//        })
+        /*
+        UIView.animate(withDuration: 10000.0, animations: {
+            self.textLabel.text = "찾는 중.."
+        }, completion: { (flag) in
+            self.textLabel.text = "찾았다!"
+        })
+        */
     }
     
     
