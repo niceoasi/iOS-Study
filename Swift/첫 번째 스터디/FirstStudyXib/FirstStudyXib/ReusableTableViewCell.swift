@@ -30,6 +30,12 @@ class ReusableTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func configureCell(index: Int?) {
+        guard let index = index else {
+            return
+        }
+        indexLabel?.text = "\(index)"
+    }
     
     // MARK: Actions
 }
