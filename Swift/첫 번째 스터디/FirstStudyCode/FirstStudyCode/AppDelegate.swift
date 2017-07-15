@@ -19,16 +19,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        window = UIWindow(frame: UIScreen.main.bounds)
-        
-        let tabbarController = UITabBarController()
-        
         firstViewController = CustomViewController()
         secondViewController = CustomViewController()
         
         guard let firstViewController1 = firstViewController, let secondViewController1 = secondViewController else {
             return false
         }
+
+        let tabbarController = UITabBarController()
         
         let firstNavigationController = UINavigationController(rootViewController: firstViewController1)
         let secondNavigationController = UINavigationController(rootViewController: secondViewController1)
@@ -41,8 +39,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         firstNavigationController.tabBarItem = item1
         secondNavigationController.tabBarItem = item2
         
+        window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = tabbarController
-        
         window?.makeKeyAndVisible()
         
         return true
