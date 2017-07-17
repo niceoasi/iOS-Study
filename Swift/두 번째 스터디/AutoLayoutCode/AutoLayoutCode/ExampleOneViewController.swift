@@ -73,6 +73,7 @@ class ExampleOneViewController: UIViewController {
     // MARK: SetViews()
     func setViews() {
         navigationItem.title = "Example_01"
+        view.backgroundColor = .white
         // MARK: set header
         let hView = UIView()
         let btnOne = CustomButton(bgColor: UIColor(hexString: "#559FF7"), width: 44, title: "너비 44")

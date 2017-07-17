@@ -54,6 +54,7 @@ class ExampleThreeViewController: UIViewController {
     // MARK: SetViews()
     func setViews() {
         navigationItem.title = "Example_03"
+        view.backgroundColor = .white
         // MARK: set header
         let hView = UIView()
         let tText = CustomLabel(txt: "타이틀 뷰 입니다.")
